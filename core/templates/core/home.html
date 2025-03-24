@@ -1,0 +1,236 @@
+{% load static %}
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriIA - Home</title>
+    <!-- Link para a fonte Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Font Awesome para ícones de redes sociais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Camada do Menu -->
+    <header>
+        <div class="logo">
+            <img src="{% static 'images/logo.png' %}" alt="Logo TriIA">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/triia_hub/">TriIA HUB</a></li>
+                <li><a href="/branding/">Branding</a></li>
+                <li><a href="/trafego/">Tráfego Pago</a></li>
+                <li><a href="/contato/">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </header>
+
+    <!-- Camada de Background com Degradê e Vídeo -->
+    <section class="banner">
+        <!-- Vídeo de fundo -->
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="{% static 'videos/background-video.mp4' %}" type="video/mp4">
+            Seu navegador não suporta vídeo em HTML5.
+        </video>
+
+        <!-- Camada do Texto de Abertura -->
+        <div class="banner-content">
+            <h2>
+                <span class="line-one">Sua empresa está</span><br>
+                <span class="line-two">pronta para decolar?</span>
+            </h2>
+            <div class="buttons">
+                <a href="#" class="btn-yes">SIM</a>
+                <a href="#" class="btn-no">AINDA NÃO TENHO CERTEZA!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Camada de Imagens de Serviços -->
+    <section class="services">
+        <div class="service">
+            <img src="{% static 'images/triahub.png' %}" alt="TriIA HUB">
+            <h3>TriIA HUB</h3>
+            <p>Seu sistema funcional 24 horas, todos os dias!</p>
+        </div>
+        <div class="service">
+            <img src="{% static 'images/branding.png' %}" alt="Branding">
+            <h3>Branding</h3>
+            <p>Sua marca com a melhor presença digital.</p>
+        </div>
+        <div class="service">
+            <img src="{% static 'images/trafegopago.png' %}" alt="Tráfego Pago">
+            <h3>Tráfego Pago</h3>
+            <p>Está na hora do seu produto atingir o público certo!</p>
+        </div>
+    </section>
+
+    <!-- Seção "Como sua marca pode crescer com a TriIA?" -->
+    <section class="how-to-grow">
+        <h2>Como sua marca pode crescer com a TriIA?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu quam ac nisl iaculis feugiat at at mol metus. Ulmi Donec ex ac, Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Mamet non magna.</p>
+        <a href="#" class="btn-decolar">Quero decolar</a>
+    </section>
+
+    <!-- Seção "Pronto para falar com o Adam?" -->
+    <section class="speak-with-adam">
+        <h2>Pronto para falar com o Adam?</h2>
+        <a href="#" class="btn-speak-now">Falar Agora</a>
+    </section>
+
+    <!-- Seção "Como a TriIA tem feito as empresas crescerem" -->
+    <section class="how-triia-helps">
+        <h2>Como a TriIA tem feito as empresas crescerem!</h2>
+        <p>Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+
+        <div class="services-grid">
+            <div class="service-item">
+                <i class="fas fa-cogs"></i>
+                <h3>TriIA HUB</h3>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-comments"></i>
+                <h3>Whatsapp Profissional</h3>
+                <p>Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Branding</h3>
+                <p>Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-chart-line"></i>
+                <h3>Tráfego Pago</h3>
+                <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-users"></i>
+                <h3>Público alvo</h3>
+                <p>Vitae elit libero, a pharetra augue. Nulla quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-bullhorn"></i>
+                <h3>LEADS que convertem</h3>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-chart-pie"></i>
+                <h3>Crescimento no mercado</h3>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-shopping-cart"></i>
+                <h3>Maior volume de vendas</h3>
+                <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção com números e descrições -->
+    <section class="numbers-section">
+        <div class="numbers-box">
+            <div class="number-item">
+                <h3>564</h3>
+                <p>Marcas</p>
+            </div>
+            <div class="number-item">
+                <h3>69</h3>
+                <p>Brandings</p>
+            </div>
+            <div class="number-item">
+                <h3>564</h3>
+                <p>Clientes de Tráfego</p>
+            </div>
+            <div class="number-item">
+                <h3>69</h3>
+                <p>Clientes Hub</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Avaliações -->
+    <section class="testimonials">
+        <h2>Avaliações</h2>
+        <div class="testimonial-item">
+            <img src="{% static 'images/testimonial.jpg' %}" alt="John Doe">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu quam ac nisl iaculis feugiat at at mol metus. Ulmi Donec ex ac, Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p><strong>John Doe</strong><br>Founder of A Company</p>
+        </div>
+    </section>
+
+    <!-- Seção Inscrição -->
+    <section class="newsletter">
+        <h2>Inscreva-se e receba nossas dicas!</h2>
+        <form action="#" method="POST">
+            <input type="email" placeholder="Seu e-mail" required>
+            <button type="submit" class="btn-subscribe">INSCREVER-SE</button>
+        </form>
+        <p class="small-text">Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+    </section>
+
+    <!-- Seção de Clientes -->
+    <section class="clients-section">
+        <h2>Marcas que já conheceram a TriIA</h2>
+        <div class="clients-logos">
+            <img src="{% static 'images/logolife.png' %}" alt="Log Life">
+            <img src="{% static 'images/royale.png' %}" alt="Royale Lounge & Bar">
+            <img src="{% static 'images/florescer.png' %}" alt="Florescer Neurobiótica">
+            <img src="{% static 'images/rova.png' %}" alt="Rova Logística">
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="{% static 'images/logo.png' %}" alt="Logo TriIA">
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cumagnis dis parturient montes.</p>
+                <p>TriIA Company 2025</p>
+            </div>
+            <div class="footer-nav">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/portfolio/">TriIA HUB</a></li>
+                    <li><a href="/branding/">Branding</a></li>
+                    <li><a href="/trafego/">Tráfego Pago</a></li>
+                    <li><a href="/contato/">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="/quem-somos/">Quem somos</a></li>
+                    <li><a href="/portfolio/">Portfólio</a></li>
+                    <li><a href="/avaliacoes/">Avaliações</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Nossas redes sociais</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer>
+        <p>&copy; 2025 TriIA Company</p>
+    </footer>
+</body>
+
+</html>

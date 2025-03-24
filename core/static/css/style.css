@@ -1,0 +1,568 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Usando Montserrat */
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+/* Estilizando o cabeçalho - menu flutuante */
+header {
+    display: flex;
+    justify-content: space-between; /* Para ter a logo à esquerda, menu no centro e redes sociais à direita */
+    align-items: center;
+    background-color: #1fa1b8;
+    padding: 30px;
+    position: fixed;  /* Tornando o menu fixo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3; /* Camada superior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionando sombra para dar destaque */
+}
+
+header .logo img {
+    height: 30px; /* Logo ajustada para 30px */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    display: flex; /* Usando flexbox para distribuir os itens */
+    justify-content: center; /* Centralizando os itens do menu */
+    width: 100%; /* Garantindo que o menu ocupe toda a largura da barra azul */
+}
+
+nav ul li {
+    margin-right: 40px; /* Aumentando o espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase; /* Transformando as letras para maiúsculas */
+    font-weight: normal; /* Removendo o negrito */
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease; /* Adicionando a transição para o fundo */
+    padding: 38px 0; /* Ajuste do padding para manter o tamanho consistente com a barra azul */
+}
+
+nav ul li a:hover {
+    color: #f0f4f8; /* Cor quando passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+    background-color: #1c8ea2; /* Fundo do botão alterado para #263639 no hover */
+}
+
+/* Estilo do Banner */
+.banner {
+    position: relative;
+    background: linear-gradient(to right, #325c63, #00c1e3);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    height: 80vh;
+    margin-top: 80px; /* Para garantir que o menu fixo não sobreponha o banner */
+    text-align: center;
+    z-index: 2; /* Camada do fundo com degradê */
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garantindo que o vídeo cubra todo o fundo */
+    z-index: 1; /* Vídeo em segundo plano */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 3; /* Texto acima do vídeo */
+}
+
+.banner-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.line-one {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; /* Montserrat light */
+    font-size: 35px;
+}
+
+.line-two {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800; /* Montserrat extra bold */
+    font-size: 35px;
+}
+
+.buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.buttons a {
+    font-family: 'Montserrat', sans-serif; /* Usando Montserrat */
+    font-size: 14px;
+    font-weight: normal; /* Removendo o negrito */
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+.btn-yes {
+    background-color: #263639; /* Cor do botão SIM */
+    border-radius: 25px; /* Botão arredondado */
+}
+
+.btn-no {
+    color: #263639;
+    text-decoration: underline;
+    padding: 10px 20px;
+    border: none; /* Remover linha quadrada ao redor */
+}
+
+/* Estilo dos serviços */
+.services {
+    display: flex;
+    justify-content: center; /* Centralizando os serviços */
+    padding: 40px;
+    position: relative;
+    top: -100px; /* Ajustando o valor de top para colocá-los na divisão entre o fundo do vídeo e o fundo branco */
+    z-index: 2; /* Camada dos serviços */
+    gap: 50px; /* Espaçamento entre os serviços */
+}
+
+.service {
+    background-color: white;
+    padding: 5px;
+    width: 20%;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.service p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Seção "Como sua marca pode crescer com a TriIA?" */
+.how-to-grow {
+    background-color: #f0f4f8;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.how-to-grow h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #263639;
+    margin-bottom: 20px;
+}
+
+.how-to-grow p {
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-decolar {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #263639; /* Cor do botão */
+    text-decoration: none;
+    border-radius: 25px; /* Botão arredondado */
+    transition: background-color 0.3s ease;
+}
+
+.btn-decolar:hover {
+    background-color: #1c8ea2; /* Cor do botão quando passar o mouse */
+}
+
+/* Estilizando os ícones das redes sociais */
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Aumentando o espaçamento entre os ícones */
+}
+
+.social-icons a {
+    color: white; /* Ícones brancos */
+    font-size: 20px; /* Ajustando o tamanho dos ícones */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #f0f4f8; /* Cor dos ícones ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Seção "Pronto para falar com o Adam?" */
+.speak-with-adam {
+    background-color: #263639; /* Cor do fundo azul escuro */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.speak-with-adam h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-speak-now {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #1c8ea2; /* Cor do botão */
+    text-decoration: none;
+    border-radius: 25px; /* Botão arredondado */
+    transition: background-color 0.3s ease;
+}
+
+.btn-speak-now:hover {
+    background-color: #263639; /* Cor do botão quando passar o mouse */
+}
+/* Estilo da nova seção "Como a TriIA tem feito as empresas crescerem" */
+.how-triia-helps {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.how-triia-helps h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #263639;
+    margin-bottom: 20px;
+}
+
+.how-triia-helps p {
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo da grade de serviços */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Quatro colunas */
+    gap: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo dos itens da grade */
+.service-item {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item i {
+    font-size: 50px;
+    color: #1c8ea2;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    color: #263639;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #666666;
+}
+
+/* Estilo para dispositivos móveis (responsivo) */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr 1fr; /* Duas colunas em telas menores */
+    }
+}
+/* Estilo da nova seção com números e descrições */
+.numbers-section {
+    background: linear-gradient(to right, #263639, #00c1e3); /* Fundo com degradê */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.numbers-box {
+    display: flex;
+    justify-content: space-around; /* Distribuindo os itens igualmente */
+    align-items: center;
+    gap: 30px; /* Espaço entre os itens */
+}
+
+.number-item {
+    text-align: center;
+    color: white;
+}
+
+.number-item h3 {
+    font-size: 3rem; /* Tamanho grande para os números */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.number-item p {
+    font-size: 1rem;
+    font-weight: normal;
+}
+/* Estilo para a seção Avaliações */
+.testimonials {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #263639;
+}
+
+.testimonial-item {
+    background-color: #f0f4f8;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial-item img {
+    border-radius: 50%;
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.testimonial-item p {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.testimonial-item strong {
+    font-size: 1.2rem;
+    color: #263639;
+}
+
+/* Estilo para a seção de Inscrição */
+.newsletter {
+    background-color: #00aaff;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.newsletter input {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    width: 300px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+}
+
+.newsletter button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #263639;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #1c8ea2; /* Efeito hover no botão */
+}
+
+.newsletter .small-text {
+    font-size: 0.9rem;
+    color: white;
+    margin-top: 10px;
+}
+/* Estilo para a seção de Clientes */
+.clients-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.clients-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #263639;
+    margin-bottom: 20px;
+}
+
+.clients-logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Aumentando o espaço entre os logos */
+    align-items: center;
+}
+
+.clients-logos img {
+    max-width: 150px; /* Ajustando o tamanho máximo dos logos */
+    height: auto;
+}
+/* Estilo do Rodapé */
+footer {
+    background-color: #263639; /* Cor de fundo do rodapé */
+    color: white;
+    padding: 40px 20px;
+    position: relative; /* Remover "fixed" para permitir a rolagem normal */
+    bottom: 0; /* Garantir que o rodapé fique na parte inferior da página */
+    width: 100%; /* Garantir que ocupe toda a largura */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Para garantir responsividade */
+    gap: 20px;
+}
+
+.footer-logo {
+    max-width: 250px;
+}
+
+.footer-logo img {
+    width: 150px; /* Tamanho da logo */
+    margin-bottom: 20px;
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    margin-bottom: 10px;
+}
+
+.footer-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-nav ul li a:hover {
+    color: #f0f4f8; /* Cor do link quando passar o mouse */
+}
+
+.footer-social h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #1c8ea2; /* Cor dos ícones ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

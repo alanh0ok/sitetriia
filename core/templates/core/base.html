@@ -1,0 +1,36 @@
+{% load static %} <!-- Carregando a tag static no início -->
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriIA - Home</title>
+    <!-- Link para a fonte Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- Corrigido com o {% static %} -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'images/logo.png' %}" alt="Logo TriIA">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/core/static">Home</a></li>
+                <li><a href="/portfolio">TriIA HUB</a></li>
+                <li><a href="/branding/">Branding</a></li>
+                <li><a href="/trafego/">Tráfego Pago</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </header>
+
+    <!-- Seu conteúdo -->
+</body>
+</html>

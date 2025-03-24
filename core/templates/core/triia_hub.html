@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriIA - TriIA HUB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Font Awesome para ícones de redes sociais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Camada do Menu -->
+    <header>
+        <div class="logo">
+            <img src="{% static 'images/logo.png' %}" alt="Logo TriIA">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/triia_hub/">TriIA HUB</a></li>
+                <li><a href="/branding/">Branding</a></li>
+                <li><a href="/trafego/">Tráfego Pago</a></li>
+                <li><a href="/contato/">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </header>
+
+    <!-- Camada de Background com Degradê e Vídeo -->
+    <section class="banner">
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="{% static 'videos/background-video.mp4' %}" type="video/mp4">
+            Seu navegador não suporta vídeo em HTML5.
+        </video>
+
+        <div class="banner-content">
+            <h2>
+                <span class="line-one">Sua empresa está</span><br>
+                <span class="line-two">pronta para decolar?</span>
+            </h2>
+            <div class="buttons">
+                <a href="#" class="btn-yes">SIM</a>
+                <a href="#" class="btn-no">AINDA NÃO TENHO CERTEZA!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Camada de Conteúdo da TriIA HUB -->
+    <section class="triia-hub">
+        <h1>TriIA HUB</h1>
+        <p>Seu sistema funcional 24 horas, todos os dias!</p>
+        <div class="content">
+            <p>Este é o conteúdo da página TriIA HUB, onde explicamos como a nossa plataforma funciona e o que ela oferece.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu quam ac nisl iaculis feugiat at at mol metus. Ulmi Donec ex ac, Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Mamet non magna.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'images/triahub.png' %}" alt="Imagem do TriIA HUB">
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contact-section">
+        <h2>Entre em contato com a TriIA</h2>
+        <p>Tem alguma dúvida ou quer saber mais sobre o TriIA HUB? Entre em contato conosco!</p>
+        <a href="/contato/" class="btn-contact">Contato</a>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="{% static 'images/logo.png' %}" alt="Logo TriIA">
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cumagnis dis parturient montes.</p>
+                <p>TriIA Company 2025</p>
+            </div>
+            <div class="footer-nav">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/portfolio/">TriIA HUB</a></li>
+                    <li><a href="/branding/">Branding</a></li>
+                    <li><a href="/trafego/">Tráfego Pago</a></li>
+                    <li><a href="/contato/">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Nossas redes sociais</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

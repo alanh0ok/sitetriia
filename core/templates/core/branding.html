@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriIA - Branding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Font Awesome para ícones de redes sociais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Menu -->
+    <header>
+        <div class="logo">
+            <img src="{% static 'images/logo.png' %}" alt="Logo TriIA">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/triia_hub/">TriIA HUB</a></li>
+                <li><a href="/branding/">Branding</a></li>
+                <li><a href="/trafego/">Tráfego Pago</a></li>
+                <li><a href="/contato/">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </header>
+
+    <!-- Camada de conteúdo Branding -->
+    <section class="branding-content">
+        <h1>Branding</h1>
+        <p>Sua marca com a melhor presença digital.</p>
+        <div class="content">
+            <p>Este é o conteúdo da página Branding, onde explicamos como desenvolvemos uma identidade de marca forte e impactante.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu quam ac nisl iaculis feugiat at at mol metus. Ulmi Donec ex ac, Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Mamet non magna.</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="{% static 'images/logo.png' %}" alt="Logo TriIA">
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cumagnis dis parturient montes.</p>
+                <p>TriIA Company 2025</p>
+            </div>
+            <div class="footer-nav">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/portfolio/">TriIA HUB</a></li>
+                    <li><a href="/branding/">Branding</a></li>
+                    <li><a href="/trafego/">Tráfego Pago</a></li>
+                    <li><a href="/contato/">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Nossas redes sociais</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
